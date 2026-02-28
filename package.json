@@ -1,0 +1,12 @@
+{
+  "name": "wankelworld",
+  "version": "1.0.0",
+  "description": "Wankerworld - Modern Mazda and Rotary Engine Enthusiast Site",
+  "scripts": {
+    "dev": "npx serve public",
+    "build": "echo 'Static site - just deploy the public folder'"
+  },
+  "keywords": ["mazda", "rotary", "wankel", "rx-7", "rx-8", "rx-2", "rx-3", "r100"],
+  "author": "Stan O'Donnell",
+  "license": "MIT"
+}
