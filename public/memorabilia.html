@@ -4,239 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memorabilia - Wankelworld</title>
-    <meta name="description" content="Rotary and Mazda memorabilia: die-cast models, resin kits, literature, and collectibles for the rotary enthusiast.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .original-content { background: #E0E0E0; color: #434343; padding: 20px; }
+        .original-content h1 { color: #0080C0; font-family: "Copperplate Gothic Bold", sans-serif; font-size: 3rem; text-align: center; }
+        .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+        .category-card { background: #fff; border: 1px solid #ccc; padding: 15px; text-align: center; }
+        .category-card h3 { margin: 10px 0; }
+        .category-card a { color: #0000FF; text-decoration: underline; }
+    </style>
 </head>
 <body>
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <span class="logo-text">WANKEL<span class="logo-highlight">WORLD</span></span>
-                </a>
+                <a href="index.html"><span class="logo-text">WANKEL<span class="logo-highlight">WORLD</span></span></a>
             </div>
-            <nav class="main-nav">
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="mazda.html">Mazda</a></li>
-                    <li><a href="rotary.html">Rotary History</a></li>
-                    <li><a href="felix-wankel.html">Felix Wankel</a></li>
-                    <li><a href="aviation.html">Aviation</a></li>
-                    <li><a href="memorabilia.html" class="active">Memorabilia</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="links.html">Links</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Rotary Memorabilia</h1>
-                <p>Collectibles for the rotary enthusiast. From die-cast models to rare literature, celebrate your passion with tangible pieces of rotary history.</p>
+    <main class="with-sidebar-layout">
+        <aside class="site-sidebar">
+            <div class="sidebar-section">
+                <h3>Collection</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="memorabilia.html" class="active">Memorabilia</a></li>
+                    <li><a href="fun-stuff.html">Fun Stuff</a></li>
+                    <li><a href="museum.html">Wankel Museum</a></li>
+                    <li><a href="shop.html">The Wankel Shop</a></li>
+                </ul>
             </div>
-        </section>
+            <div class="sidebar-section">
+                <h3>Categories</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="memorabilia/diecast.html">Die-cast Models</a></li>
+                    <li><a href="memorabilia/resin.html">Resin Kits</a></li>
+                    <li><a href="memorabilia/brochures.html">Brochures</a></li>
+                    <li><a href="memorabilia/apparel.html">Apparel</a></li>
+                    <li><a href="memorabilia/parts.html">Engine Parts</a></li>
+                </ul>
+            </div>
+        </aside>
 
-        <section class="content-section">
-            <div class="container">
-                <div class="content-grid">
-                    <aside class="sidebar">
-                        <nav class="sidebar-nav">
-                            <h3>Categories</h3>
-                            <ul>
-                                <li><a href="#diecast" class="active">Die-Cast Models</a></li>
-                                <li><a href="#resin">Resin Kits</a></li>
-                                <li><a href="#literature">Literature</a></li>
-                                <li><a href="#apparel">Apparel</a></li>
-                                <li><a href="#parts">Engine Parts</a></li>
-                                <li><a href="#collecting">Collecting Tips</a></li>
-                            </ul>
-                        </nav>
-                    </aside>
-
-                    <article class="main-content">
-                        <section id="diecast">
-                            <h2>Die-Cast Models</h2>
-                            <p>Die-cast models offer a way to own every generation of rotary-powered Mazda without needing a bigger garage. From budget-friendly 1:64 scale to museum-quality 1:18 pieces, there's something for every collector.</p>
-                            
-                            <h3>Popular Scales</h3>
-                            <ul>
-                                <li><strong>1:64 Scale:</strong> Hot Wheels, Tomica, and Matchbox offer affordable RX-7s and RX-8s. Easy to collect the whole lineup without breaking the bank.</li>
-                                <li><strong>1:43 Scale:</strong> The most popular scale for serious collectors. Brands like Ebbro, Kyosho, and AUTOart offer excellent detail at reasonable prices.</li>
-                                <li><strong>1:18 Scale:</strong> The ultimate display pieces. AUTOart, Kyosho, and Ottomobile create stunning large-scale models with opening doors, hoods, and detailed engines.</li>
-                            </ul>
-                            
-                            <h3>Most Sought-After Models</h3>
-                            <ul>
-                                <li><strong>1970 Mazda Savanna RX-3:</strong> Racing liveries from the Japanese Grand Prix are particularly collectible</li>
-                                <li><strong>1991 Mazda 787B:</strong> The Le Mans winner in its iconic orange and green Renown livery</li>
-                                <li><strong>FD RX-7:</strong> Especially in rare colors like Montego Blue and Vintage Red</li>
-                                <li><strong>Cosmo Sport 110S:</strong> The original—hard to find but worth the hunt</li>
-                                <li><strong>RX-8 Spirit R:</strong> The final rotary model, increasingly collectible</li>
-                            </ul>
-                        </section>
-
-                        <section id="resin">
-                            <h2>Resin Model Kits</h2>
-                            <p>Resin kits offer subjects that mass-market manufacturers won't touch. Garage kit makers produce limited runs of rare rotary models, from the Mazda 110S Cosmo Sport to the 787B Le Mans winner.</p>
-                            
-                            <h3>What to Know</h3>
-                            <p>Resin kits require assembly and painting. They're not toys—they're buildable art. Most come with photo-etched metal details, decals, and instructions. Expect to spend 20-40 hours on a quality build.</p>
-                            
-                            <h3>Notable Manufacturers</h3>
-                            <ul>
-                                <li><strong>Hobby Design:</strong> High-quality resin kits of Japanese sports cars</li>
-                                <li><strong>Alpha Model:</strong> Excellent detail and fit</li>
-                                <li><strong>Studio27:</strong> Racing-focused subjects including the 787B</li>
-                                <li><strong>Hobby Fan:</strong> Good balance of detail and price</li>
-                            </ul>
-                            
-                            <h3>Building Tips</h3>
-                            <ul>
-                                <li>Wear a respirator when sanding resin—it's not good for your lungs</li>
-                                <li>Wash parts before painting to remove mold release agents</li>
-                                <li>Use CA glue for assembly—it bonds resin better than plastic cement</li>
-                                <li>Prime before painting—resin can be porous</li>
-                            </ul>
-                        </section>
-
-                        <section id="literature">
-                            <h2>Literature & Documentation</h2>
-                            <p>Brochures, workshop manuals, and period magazines offer a window into how Mazda marketed and supported these unique cars. They're also invaluable for restoration projects.</p>
-                            
-                            <h3>Workshop Manuals</h3>
-                            <p>Original workshop manuals are essential for anyone maintaining a classic rotary. They're increasingly hard to find but worth tracking down. PDF versions are available online for many models.</p>
-                            
-                            <h3>Sales Brochures</h3>
-                            <p>Mazda's marketing materials showcase the rotary's evolution. Early brochures emphasized the technology; later ones focused on performance and driving experience. The FD RX-7 brochures are particularly beautiful.</p>
-                            
-                            <h3>Magazines</h3>
-                            <p>Period reviews offer contemporary perspectives on these cars. Look for:</p>
-                            <ul>
-                                <li><strong>Road & Track, Car and Driver:</strong> US magazine reviews</li>
-                                <li><strong>Motor Trend:</strong> Often featured RX-7 comparisons</li>
-                                <li><strong>Japanese magazines:</strong> Best Car, Option, and Hyper Rev for JDM content</li>
-                            </ul>
-                            
-                            <h3>Books</h3>
-                            <ul>
-                                <li><strong>"Mazda RX-7" by Brian Long:</strong> Comprehensive history</li>
-                                <li><strong>"Rotary Engine" by Kenichi Yamamoto:</strong> By the father of Mazda's rotary program</li>
-                                <li><strong>"Wankel Rotary Engine" by Jan P. Norbye:</strong> Technical history</li>
-                            </ul>
-                        </section>
-
-                        <section id="apparel">
-                            <h2>Apparel & Accessories</h2>
-                            <p>Wear your rotary pride. From subtle nods to full enthusiast gear, there's something for every level of devotion.</p>
-                            
-                            <h3>Clothing</h3>
-                            <ul>
-                                <li><strong>Period-correct items:</strong> Vintage Mazda dealership shirts and jackets</li>
-                                <li><strong>Modern enthusiast gear:</strong> Rotary-themed t-shirts, hoodies, and caps</li>
-                                <li><strong>Racing team replicas:</strong> 787B Le Mans team wear</li>
-                            </ul>
-                            
-                            <h3>Accessories</h3>
-                            <ul>
-                                <li>Keychains featuring rotor housings</li>
-                                <li>Lapel pins and badges</li>
-                                <li>Posters and art prints</li>
-                                <li>Mugs and drinkware</li>
-                            </ul>
-                        </section>
-
-                        <section id="parts">
-                            <h2>Engine Parts as Art</h2>
-                            <p>Old rotary parts can become display pieces. A rotor on a stand, a polished housing as a coffee table base, or apex seals mounted in a frame—these are conversation starters for your garage or office.</p>
-                            
-                            <h3>Popular Display Items</h3>
-                            <ul>
-                                <li><strong>Rotor:</strong> The most recognizable rotary component. Clean it up and mount it on a stand.</li>
-                                <li><strong>Housing:</strong> A single rotor housing makes an interesting paperweight or display piece.</li>
-                                <li><strong>Eccentric shaft:</strong> When polished, these are beautiful mechanical sculptures.</li>
-                                <li><strong>Apex seals:</strong> Small but significant. A collection of seals from different engines shows evolution.</li>
-                            </ul>
-                            
-                            <h3>Where to Find Parts</h3>
-                            <ul>
-                                <li>eBay—always something listed</li>
-                                <li>Rotary specialists sometimes sell display-quality parts</li>
-                                <li>Engine rebuilds—ask your builder for a damaged rotor housing before it's scrapped</li>
-                                <li>Junkyards—surprisingly good condition parts can be found</li>
-                            </ul>
-                        </section>
-
-                        <section id="collecting">
-                            <h2>Collecting Tips</h2>
-                            
-                            <h3>Start Small</h3>
-                            <p>Don't try to collect everything at once. Pick a focus: maybe just RX-7s, or just 1:43 scale, or just Le Mans-related items. A focused collection is more satisfying than a scattered one.</p>
-                            
-                            <h3>Condition Matters</h3>
-                            <p>For die-cast models, look for intact paint, no missing parts, and original packaging if possible. For literature, check for tears, stains, and writing. But don't let perfect be the enemy of good—rare items in less-than-perfect condition are still worth having.</p>
-                            
-                            <h3>Storage</h3>
-                            <ul>
-                                <li>Keep models out of direct sunlight—UV fades paint</li>
-                                <li>Control humidity—metal parts can corrode</li>
-                                <li>Display cases protect from dust and accidents</li>
-                                <li>Store literature flat in acid-free sleeves</li>
-                            </ul>
-                            
-                            <h3>Authentication</h3>
-                            <p>The collectibles market has fakes. Buy from reputable dealers. For high-value items, ask for provenance. If a deal seems too good to be true, it probably is.</p>
-                            
-                            <h3>Community</h3>
-                            <p>Join collecting forums and Facebook groups. Other collectors are the best source for rare items, trade opportunities, and knowledge. The rotary community is generous with information.</p>
-                        </section>
-                    </article>
+        <div class="main-content-area">
+            <div class="original-content">
+                <h1>Rotary & Mazda Memorabilia</h1>
+                <p>&nbsp;</p>
+                <p align="center">Collectibles for the rotary enthusiast.</p>
+                <p>&nbsp;</p>
+                
+                <div class="category-grid">
+                    <div class="category-card">
+                        <h3><a href="memorabilia/diecast.html">Die-cast Models</a></h3>
+                        <p>1:18, 1:43, 1:64 scale models of rotary Mazda vehicles</p>
+                    </div>
+                    <div class="category-card">
+                        <h3><a href="memorabilia/resin.html">Resin Kits</a></h3>
+                        <p>Buildable resin model kits</p>
+                    </div>
+                    <div class="category-card">
+                        <h3><a href="memorabilia/brochures.html">Brochures & Literature</a></h3>
+                        <p>Original sales brochures and workshop manuals</p>
+                    </div>
+                    <div class="category-card">
+                        <h3><a href="memorabilia/apparel.html">Apparel</a></h3>
+                        <p>Clothing and accessories</p>
+                    </div>
+                    <div class="category-card">
+                        <h3><a href="memorabilia/parts.html">Engine Parts as Art</a></h3>
+                        <p>Rotors, housings, and components for display</p>
+                    </div>
                 </div>
+
+                <p align="center" style="margin-top: 30px; font-family: 'Comic Sans MS', cursive; color: #0000FF;">
+                    If you have memorabilia to sell or donate, please email: <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
+                </p>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo-text">WANKEL<span class="logo-highlight">WORLD</span></span>
-                    <p>Celebrating the rotary engine since 2002. Reborn 2026.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Explore</h4>
-                    <ul>
-                        <li><a href="mazda.html">Mazda Models</a></li>
-                        <li><a href="rotary.html">Rotary History</a></li>
-                        <li><a href="felix-wankel.html">Felix Wankel</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Community</h4>
-                    <ul>
-                        <li><a href="links.html">Useful Links</a></li>
-                        <li><a href="memorabilia.html">Memorabilia</a></li>
-                        <li><a href="aviation.html">Aviation</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Wankelworld. All rights reserved. | Dedicated to the rotary engine.</p>
+                <p>&copy; 2026 Wankelworld. Originally DrMaz.com</p>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>

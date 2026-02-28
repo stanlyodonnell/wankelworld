@@ -4,154 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felix Wankel - Wankelworld</title>
-    <meta name="description" content="The story of Felix Wankel, the German engineer who invented the rotary engine and changed automotive history forever.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .original-content { background: #E0E0E0; color: #434343; padding: 20px; }
+        .original-content h1 { color: #0080C0; font-family: "Copperplate Gothic Bold", sans-serif; font-size: 3rem; text-align: center; }
+        .content-box { max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border: 1px solid #ccc; }
+        .portrait { text-align: center; margin: 20px 0; }
+        .portrait img { max-width: 300px; border: 1px solid #ccc; }
+        .quote { font-style: italic; text-align: center; color: #666; margin: 20px 0; padding: 20px; background: #f5f5f5; border-left: 4px solid #0080C0; }
+    </style>
 </head>
 <body>
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <span class="logo-text">WANKEL<span class="logo-highlight">WORLD</span></span>
-                </a>
+                <a href="index.html"><span class="logo-text">WANKEL<span class="logo-highlight">WORLD</span></span></a>
             </div>
-            <nav class="main-nav">
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="mazda.html">Mazda</a></li>
-                    <li><a href="rotary.html">Rotary History</a></li>
-                    <li><a href="felix-wankel.html" class="active">Felix Wankel</a></li>
-                    <li><a href="aviation.html">Aviation</a></li>
-                    <li><a href="memorabilia.html">Memorabilia</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="links.html">Links</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
+    <main class="with-sidebar-layout">
+        <aside class="site-sidebar">
+            <div class="sidebar-section">
+                <h3>The Rotary World</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="felix-wankel.html" class="active">Felix Wankel</a></li>
+                    <li><a href="rotary.html">Rotary Basics</a></li>
+                    <li><a href="rotary-history.html">Rotary History</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content-area">
+            <div class="original-content">
                 <h1>Felix Wankel</h1>
-                <p>The genius who dared to reimagine the internal combustion engine. (1902-1988)</p>
-            </div>
-        </section>
+                <p align="center"><strong>1902 - 1988</strong></p>
+                <p>&nbsp;</p>
+                
+                <div class="content-box">
+                    <div class="portrait">
+                        <img src="original-content/Felix_Wankel/felix_wankel_portrait_001.jpg" 
+                             alt="Felix Wankel"
+                             onerror="this.src='assets/images/no_photo_yet.gif'">
+                        <p><em>The inventor of the rotary engine</em></p>
+                    </div>
 
-        <section class="content-section">
-            <div class="container">
-                <div class="content-grid">
-                    <aside class="sidebar">
-                        <nav class="sidebar-nav">
-                            <h3>Sections</h3>
-                            <ul>
-                                <li><a href="#biography" class="active">Biography</a></li>
-                                <li><a href="#invention">The Invention</a></li>
-                                <li><a href="#mazda-partnership">Mazda Partnership</a></li>
-                                <li><a href="#legacy">Legacy</a></li>
-                            </ul>
-                        </nav>
-                    </aside>
+                    <h2>The Man Behind the Engine</h2>
+                    <p>Felix Heinrich Wankel was born on August 13, 1902, in Lahr, Germany. A brilliant but unconventional engineer, Wankel never attended university—his expertise came from natural genius and relentless curiosity.</p>
 
-                    <article class="main-content">
-                        <section id="biography">
-                            <h2>The Man Behind the Engine</h2>
-                            <p>Felix Heinrich Wankel was born on August 13, 1902, in Lahr, Germany. A brilliant but unconventional engineer, Wankel never attended university—his expertise came from natural genius and relentless curiosity.</p>
-                            
-                            <h3>Early Life</h3>
-                            <p>Wankel's childhood was marked by illness and isolation, which he spent developing his mechanical creativity. By age 17, he had conceived his first rotary valve design. During World War II, he worked on engine designs for the German military.</p>
-                            
-                            <h3>The Dream</h3>
-                            <p>Wankel's obsession was creating an engine without reciprocating parts. He believed the piston engine's up-and-down motion was inefficient and sought a design with purely rotational movement. His famous quote: "I began to see that if you want to build a new type of engine, you must first build a new type of man."</p>
-                        </section>
+                    <h2>The Dream</h2>
+                    <div class="quote">
+                        "I began to see that if you want to build a new type of engine, you must first build a new type of man."
+                    </div>
+                    <p>Wankel's obsession was creating an engine without reciprocating parts. He believed the piston engine's up-and-down motion was inefficient and sought a design with purely rotational movement.</p>
 
-                        <section id="invention">
-                            <h2>The Rotary Engine</h2>
-                            <p>In 1954, Wankel established the Felix Wankel Institute and began serious development of his rotary engine concept. The first working prototype, the DKM 54, ran on February 1, 1957.</p>
-                            
-                            <h3>How the Dream Became Reality</h3>
-                            <p>The breakthrough was the epitrochoid housing shape combined with a triangular rotor. This design allowed the four strokes of internal combustion to occur in a continuously rotating motion. The result was an engine with only three moving parts that could produce power equivalent to a piston engine twice its size.</p>
-                            
-                            <h3>Technical Achievement</h3>
-                            <p>Wankel's engine solved problems that had stumped engineers for decades. The key was the combination of:</p>
-                            <ul>
-                                <li>The epitrochoid combustion chamber shape</li>
-                                <li>The triangular rotor with apex seals</li>
-                                <li>The eccentric shaft power takeoff</li>
-                                <li>Peripheral intake and exhaust ports</li>
-                            </ul>
-                        </section>
+                    <h2>The Invention</h2>
+                    <p>In 1954, Wankel established the Felix Wankel Institute and began serious development of his rotary engine concept. The first working prototype, the DKM 54, ran on February 1, 1957.</p>
 
-                        <section id="mazda-partnership">
-                            <h2>The Mazda Connection</h2>
-                            <p>In 1961, Wankel signed a licensing agreement with NSU Motorenwerke (later Audi). This agreement allowed other companies to develop the rotary engine—including Mazda.</p>
-                            
-                            <h3>Why Mazda?</h3>
-                            <p>While other manufacturers experimented with the rotary and abandoned it due to seal wear and emissions challenges, Mazda saw potential. Under the leadership of Kenichi Yamamoto and the "47 Samurai" engineers, Mazda committed to solving the rotary's problems.</p>
-                            
-                            <h3>Making It Work</h3>
-                            <p>Mazda's engineers spent years perfecting the apex seals, developing new materials and designs that could withstand the harsh environment inside the combustion chamber. Their persistence transformed the rotary from a promising concept into a reliable production engine.</p>
-                        </section>
+                    <h2>The Mazda Connection</h2>
+                    <p>In 1961, Wankel signed a licensing agreement with NSU Motorenwerke. This agreement allowed other companies to develop the rotary engine—including Mazda. While other manufacturers experimented with the rotary and abandoned it due to challenges, Mazda saw potential and committed to solving its problems.</p>
 
-                        <section id="legacy">
-                            <h2>Legacy</h2>
-                            <p>Felix Wankel received numerous honors during his lifetime, including honorary doctorates from several universities. He died on October 9, 1988, at age 86, having lived to see his creation power everything from sports cars to aircraft.</p>
-                            
-                            <h3>The Wankel Stamp</h3>
-                            <p>In 1986, Germany issued a postage stamp honoring Wankel and his engine—a rare tribute for an engineer. The stamp depicts the rotary engine's distinctive triangular rotor.</p>
-                            
-                            <h3>Lasting Impact</h3>
-                            <p>Today, Wankel's engine powers everything from drones to marine applications. While Mazda remains the only major automaker to mass-produce rotary cars, the engine's influence extends far beyond automotive. Its compact size, light weight, and smooth operation make it ideal for applications where traditional engines are too large or heavy.</p>
-                            
-                            <h3>The Dream Lives On</h3>
-                            <p>Felix Wankel's vision of a better engine continues to inspire engineers worldwide. As Mazda develops new rotary technology for hybrid and range-extender applications, the engine that bears his name may yet have its greatest chapter ahead.</p>
-                        </section>
-                    </article>
+                    <h2>Legacy</h2>
+                    <p>Felix Wankel received numerous honors during his lifetime, including honorary doctorates from several universities. In 1986, Germany issued a postage stamp honoring Wankel and his engine—a rare tribute for an engineer. He died on October 9, 1988, at age 86, having lived to see his creation power everything from sports cars to aircraft.</p>
                 </div>
+
+                <p align="center" style="margin-top: 30px; font-family: 'Comic Sans MS', cursive; color: #0000FF;">
+                    <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
+                </p>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo-text">WANKEL<span class="logo-highlight">WORLD</span></span>
-                    <p>Celebrating the rotary engine since 2002. Reborn 2026.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Explore</h4>
-                    <ul>
-                        <li><a href="mazda.html">Mazda Models</a></li>
-                        <li><a href="rotary.html">Rotary History</a></li>
-                        <li><a href="felix-wankel.html">Felix Wankel</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Community</h4>
-                    <ul>
-                        <li><a href="links.html">Useful Links</a></li>
-                        <li><a href="memorabilia.html">Memorabilia</a></li>
-                        <li><a href="aviation.html">Aviation</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Wankelworld. All rights reserved. | Dedicated to the rotary engine.</p>
+                <p>&copy; 2026 Wankelworld. Originally DrMaz.com</p>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
