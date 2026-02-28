@@ -1,0 +1,54 @@
+# LARGE FILES EXCLUDED FROM GITHUB
+# These files exceed GitHub's 100MB limit and need to be uploaded separately
+# Upload them to your web host via FTP/cPanel after deployment
+
+## Files over 100MB (must upload separately):
+
+1. public/original-content/Fun_stuff/Video/Mazda_RX-8_videos/Mazda_RX-8_video_LA_MS_001.mpg
+   Size: 176 MB
+   Description: Mazda RX-8 video - LA MS
+
+2. public/original-content/Fun_stuff/Video/Mazda_RX-8_videos/Mazda_RX-8_test_001.mpg
+   Size: 108 MB
+   Description: Mazda RX-8 test video
+
+3. public/original-content/Fun_stuff/Video/Mazda_RX-8_videos/Mazda_RX-8_video_tokyo_MS_001.mpg
+   Size: 208 MB
+   Description: Mazda RX-8 video - Tokyo MS
+
+## Files over 50MB (also excluded):
+
+4. public/original-content/Fun_stuff/Video/Mazda_Commericals/RX-8/2003_Mazda_RX-8_Japanese_CM_001.mpg
+   Size: 82 MB
+   Description: 2003 Mazda RX-8 Japanese Commercial
+
+5. public/original-content/Fun_stuff/Video/Mazda_Commericals/Spiano/2002_Mazda_Spiano_Japanese_CM_001.mpg
+   Size: 71 MB
+   Description: 2002 Mazda Spiano Japanese Commercial
+
+## How to upload these files:
+
+### Option A: Web Host File Manager
+1. Log into your hosting control panel (cPanel)
+2. Open File Manager
+3. Navigate to: public_html/original-content/Fun_stuff/Video/
+4. Upload each .mpg file to its respective folder
+
+### Option B: FTP
+Use an FTP client (FileZilla, Cyberduck) to upload:
+- Host: yourdomain.com
+- Username: your FTP username
+- Password: your FTP password
+- Upload to: /public_html/original-content/Fun_stuff/Video/
+
+### Option C: Direct to GitHub Pages (not recommended for large files)
+GitHub Pages has a 1GB total limit. For video files, consider:
+- YouTube embeds (recommended)
+- Vimeo
+- Self-hosted on separate server
+
+## Note:
+All other content (images, HTML, CSS, smaller files) has been pushed to GitHub successfully.
+These 5 video files are the only ones excluded due to size limits.
+
+Total size of excluded files: 645 MB

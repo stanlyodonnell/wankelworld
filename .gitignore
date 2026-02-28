@@ -28,3 +28,15 @@ logs/
 .env
 .env.local
 .env.*.local
+
+# Large files (>50MB) - excluded from GitHub, upload separately
+public/original-content/Fun_stuff/Video/Mazda_RX-8_videos/Mazda_RX-8_video_LA_MS_001.mpg
+public/original-content/Fun_stuff/Video/Mazda_RX-8_videos/Mazda_RX-8_test_001.mpg
+public/original-content/Fun_stuff/Video/Mazda_RX-8_videos/Mazda_RX-8_video_tokyo_MS_001.mpg
+public/original-content/Fun_stuff/Video/Mazda_Commericals/RX-8/2003_Mazda_RX-8_Japanese_CM_001.mpg
+public/original-content/Fun_stuff/Video/Mazda_Commericals/Spiano/2002_Mazda_Spiano_Japanese_CM_001.mpg
+*.mpg
+*.mpeg
+*.avi
+*.mov
+*.wmv
