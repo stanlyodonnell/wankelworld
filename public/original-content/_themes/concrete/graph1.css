@@ -1,0 +1,65 @@
+.mstheme {
+	list-image-1: url(bull1_concrete.gif);
+	list-image-2: url(bull2_concrete.gif);
+	list-image-3: url(bull3_concrete.gif);
+	nav-banner-image: url(banner_concrete.gif);
+	navbutton-home-hovered: url(nav_home_over_concrete.gif);
+	navbutton-home-normal: url(nav_home_concrete.gif);
+	navbutton-horiz-hovered: url(nav_hor_over_concrete.gif);
+	navbutton-horiz-normal: url(nav_hor_concrete.gif);
+	navbutton-horiz-pushed: url(nav_hor_down_concrete.gif);
+	navbutton-next-hovered: url(nav_next_over_concrete.gif);
+	navbutton-next-normal: url(nav_next_concrete.gif);
+	navbutton-prev-hovered: url(nav_prev_over_concrete.gif);
+	navbutton-prev-normal: url(nav_prev_concrete.gif);
+	navbutton-up-hovered: url(nav_up_over_concrete.gif);
+	navbutton-up-normal: url(nav_up_concrete.gif);
+	navbutton-vert-hovered: url(nav_vert_over_concrete.gif);
+	navbutton-vert-normal: url(nav_vert_concrete.gif);
+	navbutton-vert-pushed: url(nav_vert_down_concrete.gif);
+	separator-image: url(rule_concrete.gif);
+}
+.mstheme-bannertxt {
+	color: #434343;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 5;
+}
+.mstheme-horiz-navtxt {
+	color: #434343;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 2;
+}
+.mstheme-navtxthome {
+	color: #434343;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 1;
+}
+.mstheme-navtxtnext {
+	color: #434343;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 1;
+}
+.mstheme-navtxtprev {
+	color: #434343;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 1;
+}
+.mstheme-navtxtup {
+	color: #434343;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 1;
+}
+.mstheme-vert-navtxt {
+	color: #434343;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 2;
+}
+ul {
+	list-style-image: url(bull1_concrete.gif);
+}
+ul ul {
+	list-style-image: url(bull2_concrete.gif);
+}
+ul ul ul {
+	list-style-image: url(bull3_concrete.gif);
+}

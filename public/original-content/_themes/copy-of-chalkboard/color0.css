@@ -1,0 +1,82 @@
+a:link
+{
+	color: rgb(0, 0, 255);
+}
+a:active
+{
+	color: rgb(128, 0, 0);
+}
+a:visited
+{
+	color: rgb(255, 0, 255);
+}
+body
+{
+	background-color: rgb(255, 255, 0);
+	color: rgb(125, 39, 205);
+}
+table
+{
+	table-border-color-light: rgb(255, 255, 255);
+	table-border-color-dark: rgb(153, 153, 153);
+}
+h1
+{
+	color: rgb(0, 128, 192);
+}
+h2
+{
+	color: rgb(0, 128, 192);
+}
+h3
+{
+	color: rgb(0, 128, 192);
+}
+h4
+{
+	color: rgb(0, 0, 0);
+}
+h5
+{
+	color: rgb(0, 0, 0);
+}
+h6
+{
+	color: rgb(0, 0, 0);
+}
+button
+{
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+label
+{
+	color: rgb(255, 255, 255);
+}
+.mstheme-text
+{
+}
+textarea
+{
+	color: rgb(0, 0, 0);
+}
+fieldset
+{
+	color: rgb(255, 255, 255);
+}
+legend
+{
+	color: rgb(255, 255, 255);
+}
+select
+{
+	color: rgb(0, 0, 0);
+}
+caption
+{
+	color: rgb(255, 255, 255);
+}
+th
+{
+	color: rgb(255, 255, 255);
+}

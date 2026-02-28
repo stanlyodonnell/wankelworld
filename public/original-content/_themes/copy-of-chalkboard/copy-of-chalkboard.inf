@@ -1,0 +1,35 @@
+[info]
+refcount=12
+version=1.56
+readonly=0
+codepage=65001
+format=2
+title=Copy of Chalkboard
+
+[titles]
+1033=Copy of Chalkboard
+[Fonts]
+windows-1250, LUMPARSKY=Lumparsky
+windows-1251, LUMPARSKY=Lumparsky
+windows-1253, LUMPARSKY=Lumparsky
+windows-1254, LUMPARSKY=Lumparsky
+windows-1257, LUMPARSKY=Lumparsky
+shift_jis, LUMPARSKY=Lumparsky
+windows-1250, TIMES NEW ROMAN=Times New Roman
+windows-1251, TIMES NEW ROMAN=Times New Roman
+windows-1253, TIMES NEW ROMAN=Times New Roman
+windows-1254, TIMES NEW ROMAN=Times New Roman
+windows-1255, TIMES NEW ROMAN=Times New Roman
+windows-1256, TIMES NEW ROMAN=Times New Roman
+windows-1257, TIMES NEW ROMAN=Times New Roman
+windows-1250, COPPERPLATE GOTHIC BOLD=Copperplate Gothic Bold
+windows-1251, COPPERPLATE GOTHIC BOLD=Copperplate Gothic Bold
+windows-1253, COPPERPLATE GOTHIC BOLD=Copperplate Gothic Bold
+windows-1254, COPPERPLATE GOTHIC BOLD=Copperplate Gothic Bold
+windows-1257, COPPERPLATE GOTHIC BOLD=Copperplate Gothic Bold
+shift_jis, COPPERPLATE GOTHIC BOLD=Copperplate Gothic Bold
+windows-1250, COMIC SANS MS=Comic Sans MS
+windows-1251, COMIC SANS MS=Comic Sans MS
+windows-1253, COMIC SANS MS=Comic Sans MS
+windows-1254, COMIC SANS MS=Comic Sans MS
+windows-1257, COMIC SANS MS=Comic Sans MS

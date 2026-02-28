@@ -1,0 +1,107 @@
+.mstheme
+{
+	separator-image: url(charulec.gif);
+	list-image-1: url(rotary_bullet.gif);
+	list-image-2: url(chabul2c.gif);
+	list-image-3: url(chabul3c.gif);
+	nav-banner-image: url(chabanc.gif);
+	navbutton-horiz-normal: url(rotarybutton_001.gif);
+	navbutton-horiz-hovered: url(aarotar_001.gif);
+	navbutton-horiz-pushed: url(chbtnsc.gif);
+	navbutton-vert-normal: url(rotarybutton_001.gif);
+	navbutton-vert-hovered: url(aarotar.gif);
+	navbutton-vert-pushed: url(rotarybutton_001.gif);
+	navbutton-home-normal: url(purple_button_home1.gif);
+	navbutton-home-hovered: url(purple_button_home1.gif);
+	navbutton-home-pushed: url(chmbtnc.gif);
+	navbutton-next-normal: url(purple_button_next.gif);
+	navbutton-next-hovered: url(purple_button_next.gif);
+	navbutton-next-pushed: url(purple_button_next.gif);
+	navbutton-prev-normal: url(purple_button_back.gif);
+	navbutton-prev-hovered: url(purple_button_back.gif);
+	navbutton-prev-pushed: url(purple_button_back.gif);
+	navbutton-up-normal: url(purple_button_back.gif);
+	navbutton-up-hovered: url(purple_button_back.gif);
+	navbutton-up-pushed: url(cubtnc.gif);
+}
+.mstheme-bannertxt
+{
+	font-family: Arial, Arial, Helvetica;
+	color: rgb(255, 255, 0);
+	font-size: 6;
+	font-style: normal;
+	font-weight: normal;
+	vertical-align: top;
+}
+.mstheme-horiz-navtxt
+{
+	font-family: Times New Roman;
+	color: rgb(255, 255, 0);
+	font-size: 3;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-vert-navtxt
+{
+	font-family: Arial, Arial, Helvetica;
+	color: rgb(255, 255, 0);
+	font-size: 2;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-navtxthome
+{
+	font-family: Lumparsky;
+	color: rgb(255, 255, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-navtxtnext
+{
+	font-family: Lumparsky;
+	color: rgb(255, 255, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-navtxtprev
+{
+	font-family: Lumparsky;
+	color: rgb(255, 255, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-navtxtup
+{
+	font-family: Lumparsky;
+	color: rgb(255, 255, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+}
+ul
+{
+	list-style-image: url(rotary_bullet.gif);
+}
+ul ul
+{
+	list-style-image: url(chabul2c.gif);
+}
+ul ul ul
+{
+	list-style-image: url(chabul3c.gif);
+}
