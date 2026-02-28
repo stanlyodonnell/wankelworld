@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memorabilia - Wankelworld</title>
+    <title>Mazda & Rotary Memorabilia - Wankelworld</title>
     <link rel="stylesheet" href="css/main.css">
     <style>
-        .original-content { background: #E0E0E0; color: #434343; padding: 20px; }
-        .original-content h1 { color: #0080C0; font-family: "Copperplate Gothic Bold", sans-serif; font-size: 3rem; text-align: center; }
-        .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
-        .category-card { background: #fff; border: 1px solid #ccc; padding: 15px; text-align: center; }
-        .category-card h3 { margin: 10px 0; }
-        .category-card a { color: #0000FF; text-decoration: underline; }
+        .original-content { background: #E0E0E0; color: #434343; padding: 20px; min-height: 600px; }
+        .original-content h1 { color: #0080C0; font-family: "Copperplate Gothic Bold", sans-serif; font-size: 2.5rem; text-align: center; margin-bottom: 10px; }
+        .memorabilia-tabs { display: flex; justify-content: center; gap: 10px; margin: 30px 0; flex-wrap: wrap; }
+        .memorabilia-tabs a { 
+            background: #ddd; 
+            padding: 10px 25px; 
+            border: 2px outset #fff;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .memorabilia-tabs a:hover { background: #ccc; }
+        .memorabilia-tabs a.active { background: #bbb; border: 2px inset #fff; }
+        .intro-text { text-align: center; max-width: 800px; margin: 0 auto 30px; font-size: 0.9rem; }
+        .intro-text a { color: #0000FF; text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -34,51 +44,29 @@
                     <li><a href="shop.html">The Wankel Shop</a></li>
                 </ul>
             </div>
-            <div class="sidebar-section">
-                <h3>Categories</h3>
-                <ul class="sidebar-menu">
-                    <li><a href="memorabilia/diecast.html">Die-cast Models</a></li>
-                    <li><a href="memorabilia/resin.html">Resin Kits</a></li>
-                    <li><a href="memorabilia/brochures.html">Brochures</a></li>
-                    <li><a href="memorabilia/apparel.html">Apparel</a></li>
-                    <li><a href="memorabilia/parts.html">Engine Parts</a></li>
-                </ul>
-            </div>
         </aside>
 
         <div class="main-content-area">
             <div class="original-content">
-                <h1>Rotary & Mazda Memorabilia</h1>
-                <p>&nbsp;</p>
-                <p align="center">Collectibles for the rotary enthusiast.</p>
-                <p>&nbsp;</p>
+                <h1>Mazda & Rotary Memorabilia</h1>
                 
-                <div class="category-grid">
-                    <div class="category-card">
-                        <h3><a href="memorabilia/diecast.html">Die-cast Models</a></h3>
-                        <p>1:18, 1:43, 1:64 scale models of rotary Mazda vehicles</p>
-                    </div>
-                    <div class="category-card">
-                        <h3><a href="memorabilia/resin.html">Resin Kits</a></h3>
-                        <p>Buildable resin model kits</p>
-                    </div>
-                    <div class="category-card">
-                        <h3><a href="memorabilia/brochures.html">Brochures & Literature</a></h3>
-                        <p>Original sales brochures and workshop manuals</p>
-                    </div>
-                    <div class="category-card">
-                        <h3><a href="memorabilia/apparel.html">Apparel</a></h3>
-                        <p>Clothing and accessories</p>
-                    </div>
-                    <div class="category-card">
-                        <h3><a href="memorabilia/parts.html">Engine Parts as Art</a></h3>
-                        <p>Rotors, housings, and components for display</p>
-                    </div>
+                <div class="memorabilia-tabs">
+                    <a href="memorabilia/plastic-kits.html">Plastic Kits</a>
+                    <a href="memorabilia/resin-kits.html">Resin Kits</a>
+                    <a href="memorabilia/tomica.html">Tomica</a>
+                    <a href="memorabilia/slot-cars.html">Slot Cars</a>
+                    <a href="memorabilia/diecast.html">Diecast</a>
                 </div>
 
-                <p align="center" style="margin-top: 30px; font-family: 'Comic Sans MS', cursive; color: #0000FF;">
-                    If you have memorabilia to sell or donate, please email: <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
-                </p>
+                <div class="intro-text">
+                    <p>Welcome to the most comprehensive Mazda and rotary memorabilia collection on the web.</p>
+                    <p>Click on any category above to browse the collection.</p>
+                    <p>&nbsp;</p>
+                    <p style="color: #0000FF; font-family: 'Comic Sans MS', cursive; font-size: 0.85rem;">
+                        If any one has more information to add to www.wankelworld.com or if you have some Mazda Memorabilia for sale, please email me at 
+                        <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
+                    </p>
+                </div>
             </div>
         </div>
     </main>
