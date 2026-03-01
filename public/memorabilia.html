@@ -4,91 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mazda & Rotary Memorabilia - Wankelworld</title>
+    <link rel="stylesheet" href="css/main.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #E0E0E0;
-            color: #434343;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 12px;
+        .memorabilia-hero {
+            background: linear-gradient(135deg, var(--color-dark-secondary) 0%, var(--color-dark) 100%);
+            padding: var(--space-2xl) 0;
+            text-align: center;
         }
-        .container {
-            max-width: 900px;
+        .memorabilia-hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--color-primary);
+            margin-bottom: var(--space-md);
+        }
+        .memorabilia-hero p {
+            color: var(--color-gray-400);
+            max-width: 600px;
             margin: 0 auto;
-            padding: 20px;
         }
-        h1 {
-            color: #0080C0;
-            font-family: "Copperplate Gothic Bold", "Arial Black", sans-serif;
-            font-size: 28px;
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-md);
+            padding: var(--space-2xl) 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .category-card {
+            background: var(--color-dark-secondary);
+            border: 2px solid var(--color-gray-700);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
             text-align: center;
-            margin: 20px 0;
+            transition: all var(--transition-base);
+            cursor: pointer;
         }
-        .intro {
+        .category-card:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(166, 25, 46, 0.2);
+        }
+        .category-card h3 {
+            font-family: var(--font-heading);
+            color: var(--color-light);
+            margin-bottom: var(--space-sm);
+        }
+        .contact-section {
+            background: var(--color-dark-secondary);
+            padding: var(--space-xl);
             text-align: center;
-            margin: 20px 0;
-            font-size: 12px;
+            border-top: 1px solid var(--color-gray-800);
         }
-        .intro a {
-            color: #0000FF;
-            text-decoration: underline;
-        }
-        .button-nav {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .button-nav a {
-            display: inline-block;
-            background: #CCCCCC;
-            color: #000000;
-            padding: 8px 20px;
-            margin: 5px;
-            text-decoration: none;
-            border: 2px outset #FFFFFF;
-            font-weight: bold;
-            font-size: 12px;
-        }
-        .button-nav a:hover {
-            background: #BBBBBB;
-        }
-        .button-nav a.active {
-            background: #AAAAAA;
-            border: 2px inset #FFFFFF;
-        }
-        .footer-text {
-            text-align: center;
-            margin-top: 40px;
-            font-family: "Comic Sans MS", cursive;
-            color: #0000FF;
-        }
-        .footer-text a {
-            color: #0000FF;
+        .contact-section a {
+            color: var(--color-primary);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Mazda & Rotary Memorabilia</h1>
-        
-        <div class="button-nav">
-            <a href="memorabilia/plastic-kits.html">Plastic Kits</a>
-            <a href="memorabilia/resin-kits.html">Resin Kits</a>
-            <a href="memorabilia/tomica.html">Tomica</a>
-            <a href="memorabilia/slot-cars.html">Slot Cars</a>
-            <a href="memorabilia/diecast.html">Diecast</a>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">WANKEL<span class="logo-highlight">WORLD</span></span></a>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="mazda.html">Mazda</a>
+                <a href="rotary.html">Rotary</a>
+                <a href="felix-wankel.html">Felix Wankel</a>
+                <a href="memorabilia.html" class="active">Memorabilia</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="intro">
-            <p style="color: #0000FF; font-family: 'Comic Sans MS', cursive;">
-                If any one has more information to add to www.wankelworld.com or if you have some Mazda Memorabilia for sale, please email me at 
-                <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
-            </p>
-        </div>
+    <main>
+        <section class="memorabilia-hero">
+            <div class="container">
+                <h1>Mazda & Rotary Memorabilia</h1>
+                <p>Welcome to the most comprehensive Mazda and rotary memorabilia collection on the web. Browse model kits, diecast, and collectibles.</p>
+            </div>
+        </section>
 
-        <div class="footer-text">
-            <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
+        <section class="container">
+            <div class="category-grid">
+                <a href="memorabilia/plastic-kits.html" class="category-card">
+                    <h3>Plastic Kits</h3>
+                    <p>Scale model kits from Aoshima, Tamiya, Hasegawa and more</p>
+                </a>
+                <a href="memorabilia/resin-kits.html" class="category-card">
+                    <h3>Resin Kits</h3>
+                    <p>High-detail resin garage kits from Arnage, Authentic, and others</p>
+                </a>
+                <a href="memorabilia/tomica.html" class="category-card">
+                    <h3>Tomica</h3>
+                    <p>Japanese diecast collectibles including Cosmo Sport series</p>
+                </a>
+                <a href="memorabilia/slot-cars.html" class="category-card">
+                    <h3>Slot Cars</h3>
+                    <p>Racing slot cars from AutoArt, Johnny Lightning, and Cherry Co</p>
+                </a>
+                <a href="memorabilia/diecast.html" class="category-card">
+                    <h3>Diecast</h3>
+                    <p>Premium diecast models from AUTOart, Burago, Höwsäkt</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <p>Have information to add or memorabilia for sale? <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Wankelworld. Originally DrMaz.com</p>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

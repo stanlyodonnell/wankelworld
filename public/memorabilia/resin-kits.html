@@ -3,265 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resin Model Kits - Wankelworld</title>
+    <title>Resin Kits - Wankelworld</title>
+    <link rel="stylesheet" href="../css/main.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #E0E0E0;
-            color: #434343;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 12px;
+        .page-header {
+            background: linear-gradient(135deg, var(--color-dark-secondary) 0%, var(--color-dark) 100%);
+            padding: var(--space-xl) 0;
+            text-align: center;
         }
-        .container {
+        .page-header h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            color: var(--color-primary);
+        }
+        .category-nav {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-sm);
+            padding: var(--space-md) 0;
+            flex-wrap: wrap;
+            background: var(--color-dark-tertiary);
+            border-bottom: 1px solid var(--color-gray-800);
+        }
+        .category-nav a {
+            background: var(--color-dark-secondary);
+            color: var(--color-light);
+            padding: var(--space-sm) var(--space-md);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-gray-700);
+            font-weight: 600;
+            transition: all var(--transition-fast);
+        }
+        .category-nav a:hover, .category-nav a.active {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+        .intro-text {
+            text-align: center;
+            padding: var(--space-lg);
+            color: var(--color-gray-400);
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
         }
-        h1 {
-            color: #0080C0;
-            font-family: "Copperplate Gothic Bold", "Arial Black", sans-serif;
-            font-size: 24px;
-            text-align: center;
-            margin: 20px 0;
-        }
-        .button-nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .button-nav a {
-            display: inline-block;
-            background: #CCCCCC;
-            color: #000000;
-            padding: 6px 15px;
-            margin: 3px;
-            text-decoration: none;
-            border: 2px outset #FFFFFF;
-            font-weight: bold;
-            font-size: 11px;
-        }
-        .button-nav a:hover {
-            background: #BBBBBB;
-        }
-        .button-nav a.active {
-            background: #AAAAAA;
-            border: 2px inset #FFFFFF;
-        }
-        .intro {
-            text-align: center;
-            margin: 20px;
-            font-size: 11px;
-            color: #FF0000;
-        }
-        .intro a {
-            color: #0000FF;
-            text-decoration: underline;
-        }
-        .wanted {
-            color: #FF0000;
+        .intro-text .wanted {
+            color: var(--color-primary);
             font-weight: bold;
         }
-        table {
+        .model-table {
             width: 100%;
             border-collapse: collapse;
-            background: #FFFFFF;
-            margin: 20px 0;
+            margin: var(--space-lg) 0;
+            background: var(--color-dark-secondary);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
         }
-        th {
-            background: #CCCCCC;
-            padding: 8px;
-            border: 1px solid #999999;
-            font-weight: bold;
-            font-size: 11px;
-        }
-        td {
-            padding: 6px;
-            border: 1px solid #999999;
+        .model-table th {
+            background: var(--color-gray-800);
+            color: var(--color-light);
+            padding: var(--space-sm);
             text-align: center;
-            vertical-align: middle;
-            font-size: 11px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .model-table td {
+            padding: var(--space-sm);
+            border-bottom: 1px solid var(--color-gray-800);
+            text-align: center;
+            color: var(--color-gray-300);
+        }
+        .model-table tr:hover {
+            background: var(--color-dark-tertiary);
         }
         .manufacturer-header {
-            background: #DDDDDD;
+            background: var(--color-gray-700);
+            color: var(--color-light);
             font-weight: bold;
-            font-size: 14px;
+            font-size: 1.1rem;
             text-align: center;
+            padding: var(--space-sm);
         }
-        td img {
+        .model-table img {
             max-width: 80px;
             max-height: 60px;
+            border-radius: var(--radius-sm);
         }
-        a {
-            color: #0000FF;
-            text-decoration: underline;
+        .wanted-badge {
+            background: var(--color-primary);
+            color: var(--color-light);
+            padding: 2px 8px;
+            border-radius: var(--radius-sm);
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        .back-link {
+            display: inline-block;
+            margin: var(--space-md) 0;
+            color: var(--color-gray-400);
+        }
+        .back-link:hover {
+            color: var(--color-primary);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Resin Model Kits</h1>
-        
-        <div class="button-nav">
-            <a href="plastic-kits.html">Plastic Kits</a>
-            <a href="resin-kits.html" class="active">Resin Kits</a>
-            <a href="tomica.html">Tomica</a>
-            <a href="slot-cars.html">Slot Cars</a>
-            <a href="diecast.html">Diecast</a>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"><span class="logo-text">WANKEL<span class="logo-highlight">WORLD</span></span></a>
+            </div>
         </div>
+    </header>
 
-        <div class="intro">
-            <p>Welcome to the Resin Model Kit list. At the Moment this page is far from complete. I have at least 100! (one hundred) other models to add to this page. Please click on the thumb nail size picture to see a larger and more pictures in addition to these pictures you will see a review of each kit (at this stage it is only the kits that I have that have the reviews). Any kits with the <span class="wanted">WANTED</span> sign beside it I am looking for, so if you have any of these kits for sale please give me an email <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a> you can also email me at the same address if you have some thing you would like to add to this list.</p>
-            <p>This list may take anywhere from a few seconds to a minute to show (download) upon your screen depending on your internet connection speed. Please be patient it is worth the wait.</p>
-        </div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Picture</th>
-                    <th>Scale</th>
-                    <th>Manufacturer</th>
-                    <th>Item</th>
-                    <th>Packaging</th>
-                    <th>Id#</th>
-                    <th>Country</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td colspan="7" class="manufacturer-header">Arnage</td></tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda RX-7 254 #AD Race car 1982 Release date 2003</td>
-                    <td>Box</td>
-                    <td>AL-012/430128</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda RX-7 254 #62 Race car 1983 Release date 2003</td>
-                    <td>Box</td>
-                    <td>AL-013/430135</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda 717C "lair" #41 Group C (1983) limited edition of 500pc Release date 2002</td>
-                    <td>Box</td>
-                    <td>AL-009/430004</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda 717C "lair" #60 Group C (1983) limited edition of 500pc Release date 2002</td>
-                    <td>Box</td>
-                    <td>AL-008/430001</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda 717C "lair" #61 Group C (1983) limited edition of 500pc Release date 2002</td>
-                    <td>Box</td>
-                    <td>AL-009/430008</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda Lola T616 #18 #6 Race car Release date 2004</td>
-                    <td>Box</td>
-                    <td>AL-016/430160</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda Lola T616 #38 #6 Race car Release date 2004</td>
-                    <td>Box</td>
-                    <td>AL-017/430173</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda 727C "Nelson" #65 Group C Le Mans (1984) Release date 2003</td>
-                    <td>Box</td>
-                    <td>AL-010/430104</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda 727C "lair" #67 Group C Le Mans (1984) Release date 2003</td>
-                    <td>Box</td>
-                    <td>AL-011/430111</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda 737C "Lucky Strike" #85 Group C Le Mans (1985) Release date 2002</td>
-                    <td>Box</td>
-                    <td>AL-014/002264</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda 737C "Nelson" #66 Group C Le Mans (1985) Release date 2003</td>
-                    <td>Box</td>
-                    <td>AL-015/002271</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda RX-852 #3 Group C Le Mans (1982) limited edition of 300pc release date 2001</td>
-                    <td>Box</td>
-                    <td>AL-002</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Arnage</td>
-                    <td>Mazda RX-852 #6 Group C Le Mans (1982) limited edition of 300pc release date 2001</td>
-                    <td>Box</td>
-                    <td>AL-004</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-
-                <tr><td colspan="7" class="manufacturer-header">Authentic</td></tr>
-                <tr>
-                    <td><span class="wanted">WANTED</span></td>
-                    <td>1/43</td>
-                    <td>Authentic</td>
-                    <td>Mazda Sauber 6 SWC 2.0 1994 model</td>
-                    <td>Box</td>
-                    <td>74001-2</td>
-                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <p align="center" style="font-family: 'Comic Sans MS', cursive; color: #0000FF;">
-            <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
-        </p>
+    <div class="category-nav">
+        <a href="plastic-kits.html">Plastic Kits</a>
+        <a href="resin-kits.html" class="active">Resin Kits</a>
+        <a href="tomica.html">Tomica</a>
+        <a href="slot-cars.html">Slot Cars</a>
+        <a href="diecast.html">Diecast</a>
     </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Resin Model Kits</h1>
+            </div>
+        </section>
+
+        <section class="container">
+            <a href="../memorabilia.html" class="back-link">← Back to Memorabilia</a>
+            
+            <div class="intro-text">
+                <p>High-detail resin garage kits from specialist manufacturers. Items marked with <span class="wanted">WANTED</span> are items I'm looking for — email me if you have one for sale.</p>
+            </div>
+
+            <table class="model-table">
+                <thead>
+                    <tr>
+                        <th>Picture</th>
+                        <th>Scale</th>
+                        <th>Manufacturer</th>
+                        <th>Item</th>
+                        <th>Packaging</th>
+                        <th>Id#</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="7" class="manufacturer-header">Arnage</td></tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda RX-7 254 #AD Race car 1982</td>
+                        <td>Box</td>
+                        <td>AL-012/430128</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda RX-7 254 #62 Race car 1983</td>
+                        <td>Box</td>
+                        <td>AL-013/430135</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda 717C "lair" #41 Group C (1983) LE 500pc</td>
+                        <td>Box</td>
+                        <td>AL-009/430004</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda 717C "lair" #60 Group C (1983) LE 500pc</td>
+                        <td>Box</td>
+                        <td>AL-008/430001</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda 717C "lair" #61 Group C (1983) LE 500pc</td>
+                        <td>Box</td>
+                        <td>AL-009/430008</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda Lola T616 #18 #6 Race car</td>
+                        <td>Box</td>
+                        <td>AL-016/430160</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda Lola T616 #38 #6 Race car</td>
+                        <td>Box</td>
+                        <td>AL-017/430173</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda 727C "Nelson" #65 Group C Le Mans (1984)</td>
+                        <td>Box</td>
+                        <td>AL-010/430104</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda 727C "lair" #67 Group C Le Mans (1984)</td>
+                        <td>Box</td>
+                        <td>AL-011/430111</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda 737C "Lucky Strike" #85 Group C Le Mans (1985)</td>
+                        <td>Box</td>
+                        <td>AL-014/002264</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda 737C "Nelson" #66 Group C Le Mans (1985)</td>
+                        <td>Box</td>
+                        <td>AL-015/002271</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda RX-852 #3 Group C Le Mans (1982) LE 300pc</td>
+                        <td>Box</td>
+                        <td>AL-002</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Arnage</td>
+                        <td>Mazda RX-852 #6 Group C Le Mans (1982) LE 300pc</td>
+                        <td>Box</td>
+                        <td>AL-004</td>
+                        <td>🇯🇵</td>
+                    </tr>
+
+                    <tr><td colspan="7" class="manufacturer-header">Authentic</td></tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/43</td>
+                        <td>Authentic</td>
+                        <td>Mazda Sauber 6 SWC 2.0 1994 model</td>
+                        <td>Box</td>
+                        <td>74001-2</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="text-align: center; padding: var(--space-lg);">
+                <a href="mailto:ask_us@wankelworld.com" style="color: var(--color-primary);">ask_us@wankelworld.com</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Wankelworld. Originally DrMaz.com</p>
+        </div>
+    </footer>
 </body>
 </html>
