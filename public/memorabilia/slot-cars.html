@@ -6,94 +6,21 @@
     <title>Slot Cars - Wankelworld</title>
     <link rel="stylesheet" href="../css/main.css">
     <style>
-        .page-header {
-            background: linear-gradient(135deg, var(--color-dark-secondary) 0%, var(--color-dark) 100%);
-            padding: var(--space-xl) 0;
-            text-align: center;
-        }
-        .page-header h1 {
-            font-family: var(--font-heading);
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            color: var(--color-primary);
-        }
-        .category-nav {
-            display: flex;
-            justify-content: center;
-            gap: var(--space-sm);
-            padding: var(--space-md) 0;
-            flex-wrap: wrap;
-            background: var(--color-dark-tertiary);
-            border-bottom: 1px solid var(--color-gray-800);
-        }
-        .category-nav a {
-            background: var(--color-dark-secondary);
-            color: var(--color-light);
-            padding: var(--space-sm) var(--space-md);
-            border-radius: var(--radius-md);
-            border: 1px solid var(--color-gray-700);
-            font-weight: 600;
-            transition: all var(--transition-fast);
-        }
-        .category-nav a:hover, .category-nav a.active {
-            background: var(--color-primary);
-            border-color: var(--color-primary);
-        }
-        .intro-text {
-            text-align: center;
-            padding: var(--space-lg);
-            color: var(--color-gray-400);
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .model-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: var(--space-lg) 0;
-            background: var(--color-dark-secondary);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-        }
-        .model-table th {
-            background: var(--color-gray-800);
-            color: var(--color-light);
-            padding: var(--space-sm);
-            text-align: center;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        .model-table td {
-            padding: var(--space-sm);
-            border-bottom: 1px solid var(--color-gray-800);
-            text-align: center;
-            color: var(--color-gray-300);
-        }
-        .model-table tr:hover {
-            background: var(--color-dark-tertiary);
-        }
-        .manufacturer-header {
-            background: var(--color-gray-700);
-            color: var(--color-light);
-            font-weight: bold;
-            font-size: 1.1rem;
-            text-align: center;
-            padding: var(--space-sm);
-        }
-        .wanted-badge {
-            background: var(--color-primary);
-            color: var(--color-light);
-            padding: 2px 8px;
-            border-radius: var(--radius-sm);
-            font-size: 0.75rem;
-            font-weight: bold;
-        }
-        .back-link {
-            display: inline-block;
-            margin: var(--space-md) 0;
-            color: var(--color-gray-400);
-        }
-        .back-link:hover {
-            color: var(--color-primary);
-        }
+        .page-header { background: linear-gradient(135deg, var(--color-dark-secondary) 0%, var(--color-dark) 100%); padding: var(--space-xl) 0; text-align: center; }
+        .page-header h1 { font-family: var(--font-heading); font-size: clamp(1.5rem, 4vw, 2.5rem); color: var(--color-primary); }
+        .category-nav { display: flex; justify-content: center; gap: var(--space-sm); padding: var(--space-md) 0; flex-wrap: wrap; background: var(--color-dark-tertiary); border-bottom: 1px solid var(--color-gray-800); }
+        .category-nav a { background: var(--color-dark-secondary); color: var(--color-light); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-md); border: 1px solid var(--color-gray-700); font-weight: 600; transition: all var(--transition-fast); }
+        .category-nav a:hover, .category-nav a.active { background: var(--color-primary); border-color: var(--color-primary); }
+        .intro-text { text-align: center; padding: var(--space-lg); color: var(--color-gray-400); max-width: 900px; margin: 0 auto; }
+        .model-table { width: 100%; border-collapse: collapse; margin: var(--space-lg) 0; background: var(--color-dark-secondary); border-radius: var(--radius-lg); overflow: hidden; }
+        .model-table th { background: var(--color-gray-800); color: var(--color-light); padding: var(--space-sm); text-align: center; font-weight: 600; font-size: 0.9rem; }
+        .model-table td { padding: var(--space-sm); border-bottom: 1px solid var(--color-gray-800); text-align: center; color: var(--color-gray-300); }
+        .model-table tr:hover { background: var(--color-dark-tertiary); }
+        .manufacturer-header { background: var(--color-gray-700); color: var(--color-light); font-weight: bold; font-size: 1.1rem; text-align: center; padding: var(--space-sm); }
+        .model-table img { max-width: 100px; max-height: 70px; border-radius: var(--radius-sm); cursor: pointer; }
+        .wanted-badge { background: var(--color-primary); color: var(--color-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: 0.7rem; font-weight: bold; display: inline-block; margin-bottom: 4px; }
+        .back-link { display: inline-block; margin: var(--space-md) 0; color: var(--color-gray-400); }
+        .back-link:hover { color: var(--color-primary); }
     </style>
 </head>
 <body>
@@ -124,7 +51,7 @@
             <a href="../memorabilia.html" class="back-link">← Back to Memorabilia</a>
             
             <div class="intro-text">
-                <p>Racing slot cars from various manufacturers. Items marked with WANTED are items I'm looking for.</p>
+                <p>Racing slot cars. Items marked with <span style="color: var(--color-primary);">WANTED</span> are items I'm looking for.</p>
             </div>
 
             <table class="model-table">
@@ -142,77 +69,143 @@
                 <tbody>
                     <tr><td colspan="7" class="manufacturer-header">AutoArt</td></tr>
                     <tr>
-                        <td><span class="wanted-badge">WANTED</span></td>
-                        <td>1/32</td>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/AutoArt/RX-8/Mazda_RX-8_Velocity_Red/Autoart_Mazda_RX-8_Velocity_Red_001.jpg" target="_blank"><img src="images/slot-cars/AutoArt/RX-8/Mazda_RX-8_Velocity_Red/Autoart_Mazda_RX-8_Velocity_Red_001_small.jpg" alt="Mazda RX-8 in Velocity Red" loading="lazy"></a></td>
+                        <td>1:32</td>
                         <td>AutoArt</td>
                         <td>Mazda RX-8 in Velocity Red</td>
                         <td>Box</td>
                         <td>??</td>
                         <td>?</td>
                     </tr>
-
                     <tr><td colspan="7" class="manufacturer-header">Cherry Co</td></tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Cherry_Co/Chery_Co_big_racing_001.jpg" target="_blank"><img src="images/slot-cars/Cherry_Co/Chery_Co_big_racing_001_small.jpg" alt="Mazda RX-7 race car. This is a complete " loading="lazy"></a></td>
+                        <td>???</td>
+                        <td>Cherry Co</td>
+                        <td>Mazda RX-7 race car. This is a complete slot car set (track etc) and features a Mazda RX-7 savanna SA on the front of the box. I saw this one on a Japanese web site</td>
+                        <td>Box</td>
+                        <td>??</td>
+                        <td>?</td>
+                    </tr>
+                    <tr><td colspan="7" class="manufacturer-header">Johnny Lightning</td></tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Bronze/Jonny_Lightning_Mazda_RX-7_FD_FF_Bronze_001.jpg" target="_blank"><img src="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Bronze/Jonny_Lightning_Mazda_RX-7_FD_FF_Bronze_001_small.jpg" alt="Mazda RX-7 FD from the movie &quot;The F" loading="lazy"></a></td>
+                        <td>HO</td>
+                        <td>Johnny Lightning</td>
+                        <td>Mazda RX-7 FD from the movie &quot;The Fast and Furious&quot; bronze.</td>
+                        <td>Box</td>
+                        <td>??</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Bronze_New_body_Style/Jonny_Lightning_Mazda_RX-7_FD_FF_Bronze_New_body_Style_001.jpg" target="_blank"><img src="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Bronze_New_body_Style/Jonny_Lightning_Mazda_RX-7_FD_FF_Bronze_New_body_Style_001_small.jpg" alt="Mazda RX-7 FD from the movie &quot;The F" loading="lazy"></a></td>
+                        <td>HO</td>
+                        <td>Johnny Lightning</td>
+                        <td>Mazda RX-7 FD from the movie &quot;The Fast and Furious&quot; bronze. This one has a sticker saying New Body Style.</td>
+                        <td>Box</td>
+                        <td>??</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Red/Jonny_Lightning_Mazda_RX-7_FD_FF_Red_001.jpg" target="_blank"><img src="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Red/Jonny_Lightning_Mazda_RX-7_FD_FF_Red_001_small.jpg" alt="Mazda RX-7 FD from the movie &quot;The F" loading="lazy"></a></td>
+                        <td>HO</td>
+                        <td>Johnny Lightning</td>
+                        <td>Mazda RX-7 FD from the movie &quot;The Fast and Furious&quot; red.</td>
+                        <td>Box</td>
+                        <td>??</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Red_New_body_Style/Jonny_Lightning_Mazda_RX-7_FD_FF_Red_New_body_Style_001.jpg" target="_blank"><img src="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Red_New_body_Style/Jonny_Lightning_Mazda_RX-7_FD_FF_Red_New_body_Style_001_small.jpg" alt="Mazda RX-7 FD from the movie &quot;The F" loading="lazy"></a></td>
+                        <td>HO</td>
+                        <td>Johnny Lightning</td>
+                        <td>Mazda RX-7 FD from the movie &quot;The Fast and Furious&quot; red. This one has a sticker saying New Body Style.</td>
+                        <td>Box</td>
+                        <td>??</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Orange/Jonny_Lightning_Mazda_RX-7_FD_FF_Orange_001.jpg" target="_blank"><img src="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Orange/Jonny_Lightning_Mazda_RX-7_FD_FF_Orange_001_small.jpg" alt="Mazda RX-7 FD from the movie &quot;The F" loading="lazy"></a></td>
+                        <td>HO</td>
+                        <td>Johnny Lightning</td>
+                        <td>Mazda RX-7 FD from the movie &quot;The Fast and Furious&quot; Orange.</td>
+                        <td>Box</td>
+                        <td>??</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Pink_Chrome/Jonny_Lightning_Mazda_RX-7_FD_FF_Pink_Chrome_001.jpg" target="_blank"><img src="images/slot-cars/Johnny_Lightning/Mazda/RX-7_FD/Mazda_RX-7_FD_FF_Pink_Chrome/Jonny_Lightning_Mazda_RX-7_FD_FF_Pink_Chrome_001_small.jpg" alt="Mazda RX-7 FD from the movie &quot;The F" loading="lazy"></a></td>
+                        <td>HO</td>
+                        <td>Johnny Lightning</td>
+                        <td>Mazda RX-7 FD from the movie &quot;The Fast and Furious&quot; Pink Chrome.</td>
+                        <td>Box</td>
+                        <td>??</td>
+                        <td>?</td>
+                    </tr>
+                    <tr><td colspan="7" class="manufacturer-header">Saico</td></tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Saico/RX-7_FD/Mazda_RX-7_FD_Blue-Yellow/Saico_Mazda_RX-7_FD_Blue-Yellow_001.jpg" target="_blank"><img src="images/slot-cars/Saico/RX-7_FD/Mazda_RX-7_FD_Blue-Yellow/Saico_Mazda_RX-7_FD_Blue-Yellow_001_small.jpg" alt="Mazda RX-7 FD street tuner in Blue and y" loading="lazy"></a></td>
+                        <td>1:32</td>
+                        <td>Saico</td>
+                        <td>Mazda RX-7 FD street tuner in Blue and yellow well detailed slot car</td>
+                        <td>Box</td>
+                        <td>??</td>
+                        <td>?</td>
+                    </tr>
+                    <tr><td colspan="7" class="manufacturer-header">Scalextric</td></tr>
                     <tr>
                         <td><span class="wanted-badge">WANTED</span></td>
                         <td>???</td>
-                        <td>Cherry Co</td>
-                        <td>Mazda RX-7 race car complete slot car set 1mtr+ kit</td>
+                        <td>Scalextric</td>
+                        <td>Mazda 787B Car No. 55 Le Mans winner</td>
+                        <td>Box</td>
+                        <td>93150</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Scalextric/Mazda_787/Mazda_787_car_No-18_93160/Scalextric_Mazda_787_car_No-18_93160_002.jpg" target="_blank"><img src="images/slot-cars/Scalextric/Mazda_787/Mazda_787_car_No-18_93160/Scalextric_Mazda_787_car_No-18_93160_002_small.jpg" alt="Mazda 787B Car No. 18" loading="lazy"></a></td>
+                        <td>???</td>
+                        <td>Scalextric</td>
+                        <td>Mazda 787B Car No. 18</td>
+                        <td>Box</td>
+                        <td>93160</td>
+                        <td>?</td>
+                    </tr>
+                    <tr><td colspan="7" class="manufacturer-header">Spirit</td></tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Spirit/Mazda_Race_Cars/Courage_C65_Mazda_2005_601206/Spirit_Courage_C65_Mazda_2005_601206_001.jpg" target="_blank"><img src="images/slot-cars/Spirit/Mazda_Race_Cars/Courage_C65_Mazda_2005_601206/Spirit_Courage_C65_Mazda_2005_601206_001_small.jpg" alt="Courage C65 Mazda Slot Car Car No. 8. Ra" loading="lazy"></a></td>
+                        <td>1:32</td>
+                        <td>Spirit</td>
+                        <td>Courage C65 Mazda Slot Car Car No. 8. Ran in the American Le Mans series in 2005 and was driven by Jamie Bach - Guy Cosmo. And of coarse it was rotary powered.</td>
                         <td>Box</td>
                         <td>??</td>
                         <td>?</td>
                     </tr>
-
-                    <tr><td colspan="7" class="manufacturer-header">Johnny Lightning</td></tr>
+                    <tr><td colspan="7" class="manufacturer-header">Tomy</td></tr>
                     <tr>
-                        <td><span class="wanted-badge">WANTED</span></td>
-                        <td>HO</td>
-                        <td>Johnny Lightning</td>
-                        <td>Mazda RX-7 FD from "The Fast and Furious" Bronze</td>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Tomy_ AFX/Mazda/RX-7_SA/Mazda_RX-7_SA_Racing_No-28_S-015_001.jpg" target="_blank"><img src="images/slot-cars/Tomy_%20AFX/Mazda/RX-7_SA/Mazda_RX-7_SA_Racing_No-28_S-015_001_small.jpg" alt="Mazda RX-7 SA Racing car No 28" loading="lazy"></a></td>
+                        <td>???</td>
+                        <td>Tomy</td>
+                        <td>Mazda RX-7 SA Racing car No 28</td>
                         <td>Box</td>
-                        <td>??</td>
+                        <td>S 015</td>
+                        <td>?</td>
+                    </tr>
+                    <tr><td colspan="7" class="manufacturer-header">Tyco</td></tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Tyco/MX-5/Mazda_MX-5_9009/Tyco_Mazda_MX-5_9009_001.jpg" target="_blank"><img src="images/slot-cars/Tyco/MX-5/Mazda_MX-5_9009/Tyco_Mazda_MX-5_9009_001_small.jpg" alt="Mazda MX-5 yellow very rare item this on" loading="lazy"></a></td>
+                        <td>HO</td>
+                        <td>Tyco</td>
+                        <td>Mazda MX-5 yellow very rare item this one.</td>
+                        <td>Box</td>
+                        <td>9009</td>
                         <td>?</td>
                     </tr>
                     <tr>
-                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/slot-cars/Tyco/MX-5/Mazda_MX-5_Cross_over_Track_Pack/Tyco_Mazda_MX-5_Cross_over_Track_Pack_001.jpg" target="_blank"><img src="images/slot-cars/Tyco/MX-5/Mazda_MX-5_Cross_over_Track_Pack/Tyco_Mazda_MX-5_Cross_over_Track_Pack_001_small.jpg" alt="Mazda MX-5 special cross over track pack" loading="lazy"></a></td>
                         <td>HO</td>
-                        <td>Johnny Lightning</td>
-                        <td>Mazda RX-7 FD from "The Fast and Furious" Bronze (New Body Style)</td>
-                        <td>Box</td>
-                        <td>??</td>
-                        <td>?</td>
-                    </tr>
-                    <tr>
-                        <td><span class="wanted-badge">WANTED</span></td>
-                        <td>HO</td>
-                        <td>Johnny Lightning</td>
-                        <td>Mazda RX-7 FD from "The Fast and Furious" Red</td>
-                        <td>Box</td>
-                        <td>??</td>
-                        <td>?</td>
-                    </tr>
-                    <tr>
-                        <td><span class="wanted-badge">WANTED</span></td>
-                        <td>HO</td>
-                        <td>Johnny Lightning</td>
-                        <td>Mazda RX-7 FD from "The Fast and Furious" Red (New Body Style)</td>
-                        <td>Box</td>
-                        <td>??</td>
-                        <td>?</td>
-                    </tr>
-                    <tr>
-                        <td><span class="wanted-badge">WANTED</span></td>
-                        <td>HO</td>
-                        <td>Johnny Lightning</td>
-                        <td>Mazda RX-7 FD from "The Fast and Furious" Orange</td>
-                        <td>Box</td>
-                        <td>??</td>
-                        <td>?</td>
-                    </tr>
-                    <tr>
-                        <td><span class="wanted-badge">WANTED</span></td>
-                        <td>HO</td>
-                        <td>Johnny Lightning</td>
-                        <td>Mazda RX-7 FD from "The Fast and Furious" Pink Chrome</td>
+                        <td>Tyco</td>
+                        <td>Mazda MX-5 special cross over track pack with 2 Mazda MX-5's included very rare item this one. Release date 1991.</td>
                         <td>Box</td>
                         <td>??</td>
                         <td>?</td>

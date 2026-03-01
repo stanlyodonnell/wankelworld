@@ -6,94 +6,21 @@
     <title>Tomica - Wankelworld</title>
     <link rel="stylesheet" href="../css/main.css">
     <style>
-        .page-header {
-            background: linear-gradient(135deg, var(--color-dark-secondary) 0%, var(--color-dark) 100%);
-            padding: var(--space-xl) 0;
-            text-align: center;
-        }
-        .page-header h1 {
-            font-family: var(--font-heading);
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            color: var(--color-primary);
-        }
-        .category-nav {
-            display: flex;
-            justify-content: center;
-            gap: var(--space-sm);
-            padding: var(--space-md) 0;
-            flex-wrap: wrap;
-            background: var(--color-dark-tertiary);
-            border-bottom: 1px solid var(--color-gray-800);
-        }
-        .category-nav a {
-            background: var(--color-dark-secondary);
-            color: var(--color-light);
-            padding: var(--space-sm) var(--space-md);
-            border-radius: var(--radius-md);
-            border: 1px solid var(--color-gray-700);
-            font-weight: 600;
-            transition: all var(--transition-fast);
-        }
-        .category-nav a:hover, .category-nav a.active {
-            background: var(--color-primary);
-            border-color: var(--color-primary);
-        }
-        .intro-text {
-            text-align: center;
-            padding: var(--space-lg);
-            color: var(--color-gray-400);
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .model-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: var(--space-lg) 0;
-            background: var(--color-dark-secondary);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-        }
-        .model-table th {
-            background: var(--color-gray-800);
-            color: var(--color-light);
-            padding: var(--space-sm);
-            text-align: center;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        .model-table td {
-            padding: var(--space-sm);
-            border-bottom: 1px solid var(--color-gray-800);
-            text-align: center;
-            color: var(--color-gray-300);
-        }
-        .model-table tr:hover {
-            background: var(--color-dark-tertiary);
-        }
-        .manufacturer-header {
-            background: var(--color-gray-700);
-            color: var(--color-light);
-            font-weight: bold;
-            font-size: 1.1rem;
-            text-align: center;
-            padding: var(--space-sm);
-        }
-        .wanted-badge {
-            background: var(--color-primary);
-            color: var(--color-light);
-            padding: 2px 8px;
-            border-radius: var(--radius-sm);
-            font-size: 0.75rem;
-            font-weight: bold;
-        }
-        .back-link {
-            display: inline-block;
-            margin: var(--space-md) 0;
-            color: var(--color-gray-400);
-        }
-        .back-link:hover {
-            color: var(--color-primary);
-        }
+        .page-header { background: linear-gradient(135deg, var(--color-dark-secondary) 0%, var(--color-dark) 100%); padding: var(--space-xl) 0; text-align: center; }
+        .page-header h1 { font-family: var(--font-heading); font-size: clamp(1.5rem, 4vw, 2.5rem); color: var(--color-primary); }
+        .category-nav { display: flex; justify-content: center; gap: var(--space-sm); padding: var(--space-md) 0; flex-wrap: wrap; background: var(--color-dark-tertiary); border-bottom: 1px solid var(--color-gray-800); }
+        .category-nav a { background: var(--color-dark-secondary); color: var(--color-light); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-md); border: 1px solid var(--color-gray-700); font-weight: 600; transition: all var(--transition-fast); }
+        .category-nav a:hover, .category-nav a.active { background: var(--color-primary); border-color: var(--color-primary); }
+        .intro-text { text-align: center; padding: var(--space-lg); color: var(--color-gray-400); max-width: 900px; margin: 0 auto; }
+        .model-table { width: 100%; border-collapse: collapse; margin: var(--space-lg) 0; background: var(--color-dark-secondary); border-radius: var(--radius-lg); overflow: hidden; }
+        .model-table th { background: var(--color-gray-800); color: var(--color-light); padding: var(--space-sm); text-align: center; font-weight: 600; font-size: 0.9rem; }
+        .model-table td { padding: var(--space-sm); border-bottom: 1px solid var(--color-gray-800); text-align: center; color: var(--color-gray-300); }
+        .model-table tr:hover { background: var(--color-dark-tertiary); }
+        .manufacturer-header { background: var(--color-gray-700); color: var(--color-light); font-weight: bold; font-size: 1.1rem; text-align: center; padding: var(--space-sm); }
+        .model-table img { max-width: 100px; max-height: 70px; border-radius: var(--radius-sm); cursor: pointer; }
+        .wanted-badge { background: var(--color-primary); color: var(--color-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: 0.7rem; font-weight: bold; display: inline-block; margin-bottom: 4px; }
+        .back-link { display: inline-block; margin: var(--space-md) 0; color: var(--color-gray-400); }
+        .back-link:hover { color: var(--color-primary); }
     </style>
 </head>
 <body>
@@ -116,7 +43,7 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Tomica Diecast Model</h1>
+                <h1>Tomica Diecast</h1>
             </div>
         </section>
 
@@ -124,7 +51,7 @@
             <a href="../memorabilia.html" class="back-link">← Back to Memorabilia</a>
             
             <div class="intro-text">
-                <p>Japanese diecast collectibles from Tomica. Items marked with WANTED are items I'm looking for.</p>
+                <p>Japanese Tomica diecast collectibles. Items marked with <span style="color: var(--color-primary);">WANTED</span> are items I'm looking for.</p>
             </div>
 
             <table class="model-table">
@@ -132,6 +59,7 @@
                     <tr>
                         <th>Picture</th>
                         <th>Scale</th>
+                        <th>Manufacturer</th>
                         <th>Item</th>
                         <th>Packaging</th>
                         <th>Id#</th>
@@ -139,11 +67,31 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td colspan="6" class="manufacturer-header">Mazda Cosmo Sport</td></tr>
+                    <tr><td colspan="7" class="manufacturer-header">Tomica</td></tr>
                     <tr>
-                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td></td>
+                        <td>Scale</td>
+                        <td>Tomica</td>
+                        <td>Item</td>
+                        <td>Packaging</td>
+                        <td>ID#</td>
+                        <td>?</td>
+                    </tr>
+                    <tr><td colspan="7" class="manufacturer-header">Mazda Cosmo Sport</td></tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/tomica/Tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1/Tomica_Mazda_ Cosmo_Sport_No.16-1_001.jpg" target="_blank"><img src="images/tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1/Tomica_Mazda_%20Cosmo_Sport_No.16-1_001_small.jpg" alt="Mazda New Cosmo Sports L10B in white col" loading="lazy"></a></td>
                         <td>1/60</td>
-                        <td>Mazda New Cosmo Sports L10B in white colour</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports L10B in white colour.</td>
+                        <td>Box</td>
+                        <td>16-1</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/tomica/Tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-1/Tomica_Mazda_Cosmo_Sport_No.16-1-1_001.jpg" target="_blank"><img src="images/tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-1/Tomica_Mazda_Cosmo_Sport_No.16-1-1_001_small.jpg" alt="Mazda New Cosmo Sports in ivory colour w" loading="lazy"></a></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in ivory colour with A1 wheels. The last one of these I saw for sale went for ¥ 69,000 (Japanese Yen) this was in July 2006.</td>
                         <td>Box</td>
                         <td>16-1-1</td>
                         <td>🇯🇵</td>
@@ -151,26 +99,138 @@
                     <tr>
                         <td><span class="wanted-badge">WANTED</span></td>
                         <td>1/60</td>
-                        <td>Mazda New Cosmo Sports in ivory colour with 15" wheels</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in white colour with 1D wheels.</td>
                         <td>Box</td>
                         <td>16-1-2</td>
                         <td>🇯🇵</td>
                     </tr>
                     <tr>
-                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/tomica/Tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-3/Tomica_Mazda_ Cosmo_Sport_No.16-1-3_004.jpg" target="_blank"><img src="images/tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-3/Tomica_Mazda_%20Cosmo_Sport_No.16-1-3_004_small.jpg" alt="Mazda New Cosmo Sports in white colour w" loading="lazy"></a></td>
                         <td>1/60</td>
-                        <td>Mazda New Cosmo Sports in white colour with 15" wheels</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in white colour with 1E wheels.</td>
                         <td>Box</td>
                         <td>16-1-3</td>
                         <td>🇯🇵</td>
                     </tr>
                     <tr>
-                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/tomica/Tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-4/Tomica_Mazda_Cosmo_Sport_No.16-1-4_004.jpg" target="_blank"><img src="images/tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-4/Tomica_Mazda_Cosmo_Sport_No.16-1-4_004_small.jpg" alt="Mazda New Cosmo Sports in white colour w" loading="lazy"></a></td>
                         <td>1/60</td>
-                        <td>Mazda New Cosmo Sports in red colour with 15" wheels</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in white colour with 1F wheels.</td>
+                        <td>Box</td>
+                        <td>16-1-4</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/tomica/Tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-5/Tomica_Mazda_Cosmo_Sport_No.16-1-5_003.jpg" target="_blank"><img src="images/tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-5/Tomica_Mazda_Cosmo_Sport_No.16-1-5_003_small.jpg" alt="Mazda New Cosmo Sports in red colour wit" loading="lazy"></a></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in red colour with 1HGo wheels.</td>
                         <td>Box</td>
                         <td>16-1-5</td>
                         <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in white colour with 1H wheels.</td>
+                        <td>Box</td>
+                        <td>16-1-6</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in white colour with 1H wheels.</td>
+                        <td>Box</td>
+                        <td>16-1-7</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in ivory colour with 1HN wheels.</td>
+                        <td>Box</td>
+                        <td>16-1-8</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in ivory colour with 1HN wheels.</td>
+                        <td>Box</td>
+                        <td>16-1-9</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in white colour with 1H wheels.</td>
+                        <td>Box</td>
+                        <td>16-1-10</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in ivory colour with 1H wheels.</td>
+                        <td>Box</td>
+                        <td>16-1-11</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in ivory colour with 1H wheels.</td>
+                        <td>Box</td>
+                        <td>16-1-12</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/tomica/Tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-13/Tomica_Mazda_Cosmo_Sport_No.16-1-13_004.jpg" target="_blank"><img src="images/tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-13/Tomica_Mazda_Cosmo_Sport_No.16-1-13_004_small.jpg" alt="Mazda New Cosmo Sports in white colour w" loading="lazy"></a></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in white colour with 1H wheels. Tomica 25th anniversary.</td>
+                        <td>Box</td>
+                        <td>16-1-13</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/tomica/Tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-14/Tomica_Mazda_Cosmo_Sport_No.16-1-14_004.jpg" target="_blank"><img src="images/tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-14/Tomica_Mazda_Cosmo_Sport_No.16-1-14_004_small.jpg" alt="Mazda New Cosmo Sports in white colour w" loading="lazy"></a></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in white colour with 1H wheels. Japanese automobile museum custom-made.</td>
+                        <td>Box</td>
+                        <td>16-1-14</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr>
+                        <td><span class="wanted-badge">WANTED</span><a href="images/tomica/Tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-15/Tomica_Mazda_Cosmo_Sport_No.16-1-15_003.jpg" target="_blank"><img src="images/tomica/Mazda_Cosmo_Sports/Mazda_Cosmo_Sport_No.16-1-15/Tomica_Mazda_Cosmo_Sport_No.16-1-15_003_small.jpg" alt="Mazda New Cosmo Sports in ivory colour w" loading="lazy"></a></td>
+                        <td>1/60</td>
+                        <td>Mazda Cosmo Sport</td>
+                        <td>Mazda New Cosmo Sports in ivory colour with 1HW wheels.</td>
+                        <td>Box</td>
+                        <td>16-1-15</td>
+                        <td>🇯🇵</td>
+                    </tr>
+                    <tr><td colspan="7" class="manufacturer-header">Mazda RX-3 Savanna</td></tr>
+                    <tr>
+                        <td><a href="images/tomica/Tomica/Mazda_RX-3/Mazda_Savanna_RX-3_RE-Amemiya/Tomica_Mazda_Savanna_RX-3_RE-Amemiya_001.jpg" target="_blank"><img src="images/tomica/Mazda_RX-3/Mazda_Savanna_RX-3_RE-Amemiya/Tomica_Mazda_Savanna_RX-3_RE-Amemiya_001_small.jpg" alt="Mazda Savanna RX-3 RE-Amemiya" loading="lazy"></a></td>
+                        <td></td>
+                        <td>Mazda RX-3 Savanna</td>
+                        <td>Mazda Savanna RX-3 RE-Amemiya</td>
+                        <td>Box</td>
+                        <td>???</td>
+                        <td>?</td>
                     </tr>
                 </tbody>
             </table>
