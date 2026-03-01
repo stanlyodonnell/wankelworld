@@ -4,79 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mazda & Rotary Memorabilia - Wankelworld</title>
-    <link rel="stylesheet" href="css/main.css">
     <style>
-        .original-content { background: #E0E0E0; color: #434343; padding: 20px; min-height: 600px; }
-        .original-content h1 { color: #0080C0; font-family: "Copperplate Gothic Bold", sans-serif; font-size: 2.5rem; text-align: center; margin-bottom: 10px; }
-        .memorabilia-tabs { display: flex; justify-content: center; gap: 10px; margin: 30px 0; flex-wrap: wrap; }
-        .memorabilia-tabs a { 
-            background: #ddd; 
-            padding: 10px 25px; 
-            border: 2px outset #fff;
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-            font-size: 0.9rem;
+        body {
+            margin: 0;
+            padding: 0;
+            background: #E0E0E0;
+            color: #434343;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
         }
-        .memorabilia-tabs a:hover { background: #ccc; }
-        .memorabilia-tabs a.active { background: #bbb; border: 2px inset #fff; }
-        .intro-text { text-align: center; max-width: 800px; margin: 0 auto 30px; font-size: 0.9rem; }
-        .intro-text a { color: #0000FF; text-decoration: underline; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #0080C0;
+            font-family: "Copperplate Gothic Bold", "Arial Black", sans-serif;
+            font-size: 28px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .intro {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 12px;
+        }
+        .intro a {
+            color: #0000FF;
+            text-decoration: underline;
+        }
+        .button-nav {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .button-nav a {
+            display: inline-block;
+            background: #CCCCCC;
+            color: #000000;
+            padding: 8px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border: 2px outset #FFFFFF;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .button-nav a:hover {
+            background: #BBBBBB;
+        }
+        .button-nav a.active {
+            background: #AAAAAA;
+            border: 2px inset #FFFFFF;
+        }
+        .footer-text {
+            text-align: center;
+            margin-top: 40px;
+            font-family: "Comic Sans MS", cursive;
+            color: #0000FF;
+        }
+        .footer-text a {
+            color: #0000FF;
+        }
     </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html"><span class="logo-text">WANKEL<span class="logo-highlight">WORLD</span></span></a>
-            </div>
+    <div class="container">
+        <h1>Mazda & Rotary Memorabilia</h1>
+        
+        <div class="button-nav">
+            <a href="memorabilia/plastic-kits.html">Plastic Kits</a>
+            <a href="memorabilia/resin-kits.html">Resin Kits</a>
+            <a href="memorabilia/tomica.html">Tomica</a>
+            <a href="memorabilia/slot-cars.html">Slot Cars</a>
+            <a href="memorabilia/diecast.html">Diecast</a>
         </div>
-    </header>
 
-    <main class="with-sidebar-layout">
-        <aside class="site-sidebar">
-            <div class="sidebar-section">
-                <h3>Collection</h3>
-                <ul class="sidebar-menu">
-                    <li><a href="memorabilia.html" class="active">Memorabilia</a></li>
-                    <li><a href="fun-stuff.html">Fun Stuff</a></li>
-                    <li><a href="museum.html">Wankel Museum</a></li>
-                    <li><a href="shop.html">The Wankel Shop</a></li>
-                </ul>
-            </div>
-        </aside>
-
-        <div class="main-content-area">
-            <div class="original-content">
-                <h1>Mazda & Rotary Memorabilia</h1>
-                
-                <div class="memorabilia-tabs">
-                    <a href="memorabilia/plastic-kits.html">Plastic Kits</a>
-                    <a href="memorabilia/resin-kits.html">Resin Kits</a>
-                    <a href="memorabilia/tomica.html">Tomica</a>
-                    <a href="memorabilia/slot-cars.html">Slot Cars</a>
-                    <a href="memorabilia/diecast.html">Diecast</a>
-                </div>
-
-                <div class="intro-text">
-                    <p>Welcome to the most comprehensive Mazda and rotary memorabilia collection on the web.</p>
-                    <p>Click on any category above to browse the collection.</p>
-                    <p>&nbsp;</p>
-                    <p style="color: #0000FF; font-family: 'Comic Sans MS', cursive; font-size: 0.85rem;">
-                        If any one has more information to add to www.wankelworld.com or if you have some Mazda Memorabilia for sale, please email me at 
-                        <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
-                    </p>
-                </div>
-            </div>
+        <div class="intro">
+            <p style="color: #0000FF; font-family: 'Comic Sans MS', cursive;">
+                If any one has more information to add to www.wankelworld.com or if you have some Mazda Memorabilia for sale, please email me at 
+                <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
+            </p>
         </div>
-    </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Wankelworld. Originally DrMaz.com</p>
-            </div>
+        <div class="footer-text">
+            <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
         </div>
-    </footer>
+    </div>
 </body>
 </html>

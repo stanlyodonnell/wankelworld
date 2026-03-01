@@ -3,127 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomica - Mazda Diecast Models - Wankelworld</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <title>Tomica - Wankelworld</title>
     <style>
-        .original-content { background: #E0E0E0; color: #434343; padding: 20px; }
-        .original-content h1 { color: #0080C0; font-family: "Copperplate Gothic Bold", sans-serif; font-size: 2rem; text-align: center; margin-bottom: 10px; }
-        .memorabilia-tabs { display: flex; justify-content: center; gap: 10px; margin: 20px 0; flex-wrap: wrap; }
-        .memorabilia-tabs a { 
-            background: #ddd; 
-            padding: 8px 20px; 
-            border: 2px outset #fff;
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-            font-size: 0.85rem;
+        body {
+            margin: 0;
+            padding: 0;
+            background: #E0E0E0;
+            color: #434343;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
         }
-        .memorabilia-tabs a:hover { background: #ccc; }
-        .memorabilia-tabs a.active { background: #bbb; border: 2px inset #fff; }
-        .intro-text { text-align: center; max-width: 900px; margin: 0 auto 20px; font-size: 0.85rem; color: #FF0000; }
-        .model-table { width: 100%; border-collapse: collapse; background: #fff; font-size: 0.8rem; }
-        .model-table th { background: #ccc; padding: 8px; border: 1px solid #999; font-weight: bold; }
-        .model-table td { padding: 6px; border: 1px solid #999; text-align: center; vertical-align: middle; }
-        .model-table img { max-width: 80px; max-height: 60px; }
-        .car-header { background: #ddd; font-weight: bold; font-size: 1.1rem; text-align: center; }
-        .wanted-sign { color: #FF0000; font-weight: bold; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #0080C0;
+            font-family: "Copperplate Gothic Bold", "Arial Black", sans-serif;
+            font-size: 24px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button-nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button-nav a {
+            display: inline-block;
+            background: #CCCCCC;
+            color: #000000;
+            padding: 6px 15px;
+            margin: 3px;
+            text-decoration: none;
+            border: 2px outset #FFFFFF;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        .button-nav a:hover {
+            background: #BBBBBB;
+        }
+        .button-nav a.active {
+            background: #AAAAAA;
+            border: 2px inset #FFFFFF;
+        }
+        .intro {
+            text-align: center;
+            margin: 20px;
+            font-size: 11px;
+            color: #FF0000;
+        }
+        .intro a {
+            color: #0000FF;
+            text-decoration: underline;
+        }
+        .wanted {
+            color: #FF0000;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #FFFFFF;
+            margin: 20px 0;
+        }
+        th {
+            background: #CCCCCC;
+            padding: 8px;
+            border: 1px solid #999999;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        td {
+            padding: 6px;
+            border: 1px solid #999999;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 11px;
+        }
+        .manufacturer-header {
+            background: #DDDDDD;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+        }
+        td img {
+            max-width: 80px;
+            max-height: 60px;
+        }
+        a {
+            color: #0000FF;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="../index.html"><span class="logo-text">WANKEL<span class="logo-highlight">WORLD</span></span></a>
-            </div>
+    <div class="container">
+        <h1>Tomica Diecast Model</h1>
+        
+        <div class="button-nav">
+            <a href="plastic-kits.html">Plastic Kits</a>
+            <a href="resin-kits.html">Resin Kits</a>
+            <a href="tomica.html" class="active">Tomica</a>
+            <a href="slot-cars.html">Slot Cars</a>
+            <a href="diecast.html">Diecast</a>
         </div>
-    </header>
 
-    <main class="with-sidebar-layout">
-        <aside class="site-sidebar">
-            <div class="sidebar-section">
-                <h3>Collection</h3>
-                <ul class="sidebar-menu">
-                    <li><a href="../memorabilia.html">← Memorabilia</a></li>
-                </ul>
-            </div>
-        </aside>
-
-        <div class="main-content-area">
-            <div class="original-content">
-                <h1>Tomica Diecast Model</h1>
-                
-                <div class="memorabilia-tabs">
-                    <a href="plastic-kits.html">Plastic Kits</a>
-                    <a href="resin-kits.html">Resin Kits</a>
-                    <a href="tomica.html" class="active">Tomica</a>
-                    <a href="slot-cars.html">Slot Cars</a>
-                    <a href="diecast.html">Diecast</a>
-                </div>
-
-                <div class="intro-text">
-                    <p>At the Moment this page is far from complete. I have a heap more models to add to this page. Please click on the thumb nail size picture to see a larger and more pictures in addition to these additional pictures you will a review of each model (at this stage it is only the models that I own that have the reviews). Any models with the <span class="wanted-sign">WANTED</span> sign beside it I am looking for, so if you have any of these cars for sale please give me an email <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a> you can also email me at the same address if you have some thing you would like to this list.</p>
-                    <p style="color: #FF0000;">This list may take anywhere from a few seconds to a minute to show (download) upon your screen depending on your internet connection speed. Please be patient it is worth the wait.</p>
-                </div>
-
-                <table class="model-table">
-                    <thead>
-                        <tr>
-                            <th>Picture</th>
-                            <th>Scale</th>
-                            <th>Manufacturer</th>
-                            <th>Item</th>
-                            <th>Packaging</th>
-                            <th>Id#</th>
-                            <th>Country</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td colspan="7" class="car-header">Mazda Cosmo Sport</td></tr>
-                        <tr>
-                            <td><img src="../../assets/images/no_photo_yet.gif" alt="No photo"></td>
-                            <td>1/60</td>
-                            <td>Tomica</td>
-                            <td>Mazda New Cosmo Sports L10B in white colour</td>
-                            <td>Box</td>
-                            <td>16-1</td>
-                            <td>🇯🇵</td>
-                        </tr>
-                        <tr>
-                            <td><img src="../../assets/images/no_photo_yet.gif" alt="No photo"></td>
-                            <td>1/60</td>
-                            <td>Tomica</td>
-                            <td>Mazda New Cosmo Sports in ivory colour</td>
-                            <td>Box</td>
-                            <td>16-1-2</td>
-                            <td>🇯🇵</td>
-                        </tr>
-                        
-                        <tr><td colspan="7" class="car-header">Mazda Savanna RX-7</td></tr>
-                        <tr>
-                            <td><img src="../../assets/images/no_photo_yet.gif" alt="No photo"></td>
-                            <td>1/60</td>
-                            <td>Tomica</td>
-                            <td>Savanna RX-7 in red</td>
-                            <td>Box</td>
-                            <td>50-1</td>
-                            <td>🇯🇵</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <p align="center" style="margin-top: 20px; font-family: 'Comic Sans MS', cursive; color: #0000FF; font-size: 0.85rem;">
-                    <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
-                </p>
-            </div>
+        <div class="intro">
+            <p>At the Moment this page is far from complete. I have a heap more models to add to this page. Please click on the thumb nail size picture to see a larger and more pictures in addition to these additional pictures you will see a review of each model (at this stage it is only the models that I own that have the reviews). Any models with the <span class="wanted">WANTED</span> sign beside it I am looking for, so if you have any of these cars for sale please give me an email <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a> you can also email me at the same address if you have some thing you would like to add to this list.</p>
+            <p>This list may take anywhere from a few seconds to a minute to show (download) upon your screen depending on your internet connection speed. Please be patient it is worth the wait.</p>
         </div>
-    </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Wankelworld. Originally DrMaz.com</p>
-            </div>
-        </div>
-    </footer>
+        <table>
+            <thead>
+                <tr>
+                    <th>Picture</th>
+                    <th>Scale</th>
+                    <th>Item</th>
+                    <th>Packaging</th>
+                    <th>Id#</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="6" class="manufacturer-header">Mazda Cosmo Sport</td></tr>
+                <tr>
+                    <td><span class="wanted">WANTED</span></td>
+                    <td>1/60</td>
+                    <td>Mazda New Cosmo Sports L10B in white colour</td>
+                    <td>Box</td>
+                    <td>16-1-1</td>
+                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
+                </tr>
+                <tr>
+                    <td><span class="wanted">WANTED</span></td>
+                    <td>1/60</td>
+                    <td>Mazda New Cosmo Sports in ivory colour with 15" wheels. The last one of these I saw for sale went for ¥45,000 (Japanese Yen) this was in July 2000.</td>
+                    <td>Box</td>
+                    <td>16-1-2</td>
+                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
+                </tr>
+                <tr>
+                    <td><span class="wanted">WANTED</span></td>
+                    <td>1/60</td>
+                    <td>Mazda New Cosmo Sports in white colour with 15" wheels</td>
+                    <td>Box</td>
+                    <td>16-1-2</td>
+                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
+                </tr>
+                <tr>
+                    <td><span class="wanted">WANTED</span></td>
+                    <td>1/60</td>
+                    <td>Mazda New Cosmo Sports in white colour with 15" wheels</td>
+                    <td>Box</td>
+                    <td>16-1-3</td>
+                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
+                </tr>
+                <tr>
+                    <td><span class="wanted">WANTED</span></td>
+                    <td>1/60</td>
+                    <td>Mazda New Cosmo Sports in white colour with 15" wheels</td>
+                    <td>Box</td>
+                    <td>16-1-4</td>
+                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
+                </tr>
+                <tr>
+                    <td><span class="wanted">WANTED</span></td>
+                    <td>1/60</td>
+                    <td>Mazda New Cosmo Sports in red colour with 15" wheels</td>
+                    <td>Box</td>
+                    <td>16-1-5</td>
+                    <td><img src="../assets/images/japan_flag.gif" alt="Japan" width="20"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p align="center" style="font-family: 'Comic Sans MS', cursive; color: #0000FF;">
+            <a href="mailto:ask_us@wankelworld.com">ask_us@wankelworld.com</a>
+        </p>
+    </div>
 </body>
 </html>
